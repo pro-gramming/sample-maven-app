@@ -14,3 +14,9 @@ after this you will have your target dir
 
 now look at the docker file for further instructions 
 that's it for now bitch!!
+
+now to run the apache tomcat server use the below command for testing:
+first we need to build the image from the docker file : 
+### docker build -t testdeploy .
+
+### docker run -d --rm --name test -p 8080:8080 testdeploy
